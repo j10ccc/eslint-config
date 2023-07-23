@@ -31,4 +31,4 @@ yarn-error.log*
 # turbo
 .turbo
 
-index.js
+/index.js
