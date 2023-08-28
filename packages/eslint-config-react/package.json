@@ -16,7 +16,7 @@
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
-    "@j10c/eslint-config-basic": "workspace:*",
+    "@j10c/eslint-config-basic": "workspace:v0.1.0",
     "@j10c/eslint-config-ts": "workspace:*",
     "eslint-plugin-react-hooks": "4.6.0"
   },

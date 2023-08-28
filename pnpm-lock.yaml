@@ -18,7 +18,7 @@ importers:
   packages/eslint-config:
     dependencies:
       '@j10c/eslint-config-react':
-        specifier: workspace:*
+        specifier: workspace:^0.1.0
         version: link:../eslint-config-react
     devDependencies:
       eslint:
@@ -30,7 +30,7 @@ importers:
   packages/eslint-config-react:
     dependencies:
       '@j10c/eslint-config-basic':
-        specifier: workspace:*
+        specifier: workspace:v0.1.0
         version: link:../eslint-config-basic
       '@j10c/eslint-config-ts':
         specifier: workspace:*
@@ -49,7 +49,7 @@ importers:
   packages/eslint-config-ts:
     dependencies:
       '@j10c/eslint-config-basic':
-        specifier: workspace:*
+        specifier: workspace:^0.1.0
         version: link:../eslint-config-basic
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.0.0

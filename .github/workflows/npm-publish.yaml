@@ -25,10 +25,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build
-        run: pnpm build
+      - name: Lint
+        run: pnpm lint
 
       - name: Publish to npm
-        run: npm publish
+        run: pnpm publish -r --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
