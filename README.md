@@ -1,5 +1,10 @@
 # `@j10c/eslint-config`
 
+- Double quotes, with semi
+- No trailing space
+- Auto fix for formatting (aimed to be used standalone without Prettier)
+- Reasonable defaults, best practices, only one-line of config
+
 ## Installation
 
 ```sh
