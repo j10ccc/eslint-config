@@ -1,20 +1,14 @@
 {
-  "name": "@j10c/eslint-config",
+  "name": "@j10c/eslint-config-monorepo",
   "version": "0.0.1",
   "license": "MIT",
   "author": "j10c",
   "description": "The ESLint config used by j10c",
-  "main": "index.js",
   "scripts": {
-    "build": "rollup --config"
+    "lint": "eslint . --ext .js --report-unused-disable-directives --max-warnings 0"
   },
-  "files": [
-    "README.md",
-    "index.js",
-    "LICENSE"
-  ],
   "devDependencies": {
     "eslint": "^8.45.0",
-    "rollup": "^2.79.0"
+    "@j10c/eslint-config": "workspace:*"
   }
 }
