@@ -1,6 +1,6 @@
 {
   "name": "@j10c/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "J10c's ESLint config",
   "author": "j10c",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@j10c/eslint-config-react": "workspace:^0.1.0"
+    "@j10c/eslint-config-react": "workspace:^0.1.1"
   },
   "devDependencies": {
     "eslint": "^8.45.0"

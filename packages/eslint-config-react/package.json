@@ -1,6 +1,6 @@
 {
   "name": "@j10c/eslint-config-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "author": "j10c",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
-    "@j10c/eslint-config-basic": "workspace:v0.1.0",
+    "@j10c/eslint-config-basic": "workspace:v0.1.1",
     "@j10c/eslint-config-ts": "workspace:*",
     "eslint-plugin-react-hooks": "4.6.0"
   },
