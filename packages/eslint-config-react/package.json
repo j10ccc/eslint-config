@@ -15,15 +15,16 @@
   "scripts": {
     "lint": "eslint . --config=index.js"
   },
-  "dependencies": {
-    "@j10c/eslint-config-basic": "workspace:v0.1.1",
-    "@j10c/eslint-config-ts": "workspace:*",
-    "eslint-plugin-react-hooks": "4.6.0"
-  },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
-  "devDependencies": {
+  "dependencies": {
+    "@j10c/eslint-config-basic": "workspace:v0.1.1",
+    "@j10c/eslint-config-ts": "workspace:*",
+    "eslint-plugin-react-hooks": "4.6.0",
     "local-pkg": "^0.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0"
   }
 }
