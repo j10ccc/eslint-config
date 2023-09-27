@@ -19,8 +19,8 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@j10c/eslint-config-basic": "workspace:v0.1.1",
-    "@j10c/eslint-config-ts": "workspace:*",
+    "@j10c/eslint-config-basic": "workspace:^0.1.0",
+    "@j10c/eslint-config-ts": "workspace:^0.1.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "local-pkg": "^0.4.3"
   },

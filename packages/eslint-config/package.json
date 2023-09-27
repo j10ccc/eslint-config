@@ -19,7 +19,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@j10c/eslint-config-react": "workspace:^0.1.1"
+    "@j10c/eslint-config-react": "workspace:^0.1.0"
   },
   "devDependencies": {
     "eslint": "^8.45.0"

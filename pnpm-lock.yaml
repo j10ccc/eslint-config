@@ -25,26 +25,30 @@ importers:
         specifier: ^8.45.0
         version: 8.45.0
 
-  packages/eslint-config-basic: {}
+  packages/eslint-config-basic:
+    devDependencies:
+      eslint:
+        specifier: ^8.45.0
+        version: 8.45.0
 
   packages/eslint-config-react:
     dependencies:
       '@j10c/eslint-config-basic':
-        specifier: workspace:v0.1.0
+        specifier: workspace:^0.1.0
         version: link:../eslint-config-basic
       '@j10c/eslint-config-ts':
-        specifier: workspace:*
+        specifier: workspace:^0.1.0
         version: link:../eslint-config-ts
-      eslint:
-        specifier: '>=7.4.0'
-        version: 8.45.0
       eslint-plugin-react-hooks:
         specifier: 4.6.0
         version: 4.6.0(eslint@8.45.0)
-    devDependencies:
       local-pkg:
         specifier: ^0.4.3
         version: 0.4.3
+    devDependencies:
+      eslint:
+        specifier: ^8.45.0
+        version: 8.45.0
 
   packages/eslint-config-ts:
     dependencies:
@@ -57,8 +61,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^6.0.0
         version: 6.0.0(eslint@8.45.0)(typescript@5.0.2)
+    devDependencies:
       eslint:
-        specifier: '>=7.4.0'
+        specifier: ^8.45.0
         version: 8.45.0
 
 packages:
@@ -686,7 +691,7 @@ packages:
   /local-pkg@0.4.3:
     resolution: {integrity: sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g==}
     engines: {node: '>=14'}
-    dev: true
+    dev: false
 
   /locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
