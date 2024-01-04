@@ -7,5 +7,12 @@ module.exports = {
   rules: {
     "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": "allow-with-description" }],
     "@typescript-eslint/no-explicit-any": "off"
+  },
+  settings: {
+    "import/resolver": {
+      typescript: {
+        project: "./tsconfig.json"
+      }
+    }
   }
 };
