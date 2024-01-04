@@ -8,6 +8,7 @@
     "@j10c/eslint-config-ts": "0.2.0"
   },
   "changesets": [
+    "calm-windows-confess",
     "large-starfishes-camp"
   ]
 }

@@ -1,5 +1,16 @@
 # @j10c/eslint-config
 
+## 0.3.0-beta.1
+
+### Minor Changes
+
+- fix(import): add tsconfig resolver
+
+### Patch Changes
+
+- Updated dependencies
+  - @j10c/eslint-config-react@0.3.0-beta.1
+
 ## 0.3.0-beta.0
 
 ### Minor Changes

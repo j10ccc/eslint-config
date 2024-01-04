@@ -1,5 +1,11 @@
 # @j10c/eslint-config-basic
 
+## 0.3.0-beta.1
+
+### Minor Changes
+
+- fix(import): add tsconfig resolver
+
 ## 0.3.0-beta.0
 
 ### Minor Changes
