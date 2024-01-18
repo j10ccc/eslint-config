@@ -1,5 +1,17 @@
 # @j10c/eslint-config
 
+## 0.4.0
+
+### Minor Changes
+
+- feat(astro): add astro project support
+
+### Patch Changes
+
+- Updated dependencies
+  - @j10c/eslint-config-astro@0.4.0
+  - @j10c/eslint-config-react@0.4.0
+
 ## 0.3.0
 
 ### Minor Changes

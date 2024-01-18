@@ -21,10 +21,10 @@ importers:
   packages/eslint-config:
     dependencies:
       '@j10c/eslint-config-astro':
-        specifier: workspace:^0.3.0
+        specifier: workspace:^0.4.0
         version: link:../eslint-config-astro
       '@j10c/eslint-config-react':
-        specifier: workspace:^0.3.0
+        specifier: workspace:^0.4.0
         version: link:../eslint-config-react
       local-pkg:
         specifier: ^0.5.0
@@ -37,10 +37,10 @@ importers:
   packages/eslint-config-astro:
     dependencies:
       '@j10c/eslint-config-basic':
-        specifier: workspace:^0.3.0
+        specifier: workspace:^0.4.0
         version: link:../eslint-config-basic
       '@j10c/eslint-config-ts':
-        specifier: workspace:^0.3.0
+        specifier: workspace:^0.4.0
         version: link:../eslint-config-ts
       eslint-plugin-astro:
         specifier: ^0.31.3
@@ -69,10 +69,10 @@ importers:
   packages/eslint-config-react:
     dependencies:
       '@j10c/eslint-config-basic':
-        specifier: workspace:^0.3.0
+        specifier: workspace:^0.4.0
         version: link:../eslint-config-basic
       '@j10c/eslint-config-ts':
-        specifier: workspace:^0.3.0
+        specifier: workspace:^0.4.0
         version: link:../eslint-config-ts
       eslint-plugin-react-hooks:
         specifier: 4.6.0
@@ -88,7 +88,7 @@ importers:
   packages/eslint-config-ts:
     dependencies:
       '@j10c/eslint-config-basic':
-        specifier: workspace:^0.3.0
+        specifier: workspace:^0.4.0
         version: link:../eslint-config-basic
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.0.0

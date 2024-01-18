@@ -1,5 +1,11 @@
 # @j10c/eslint-config-basic
 
+## 0.4.0
+
+### Minor Changes
+
+- feat(astro): add astro project support
+
 ## 0.3.0
 
 ### Minor Changes
