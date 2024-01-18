@@ -9,6 +9,16 @@ module.exports = {
     "quotes": ["error", "double"],
     "semi": [2, "always"],
     "no-multiple-empty-lines": ["warn", { "max": 1, "maxEOF": 0 }],
+    "sort-imports": [
+      "error",
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+        allowSeparatedGroups: true,
+      }
+    ],
     "import/no-unresolved": "error",
     "import/order": [
       "error",
