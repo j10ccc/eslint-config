@@ -22,7 +22,7 @@
     "@j10c/eslint-config-basic": "workspace:^0.3.0",
     "@j10c/eslint-config-ts": "workspace:^0.3.0",
     "eslint-plugin-react-hooks": "4.6.0",
-    "local-pkg": "^0.4.3"
+    "local-pkg": "^0.5.0"
   },
   "devDependencies": {
     "eslint": "^8.45.0"
