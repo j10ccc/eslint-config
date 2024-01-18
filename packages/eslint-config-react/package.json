@@ -1,6 +1,6 @@
 {
   "name": "@j10c/eslint-config-react",
-  "version": "0.3.0-beta.2",
+  "version": "0.3.0",
   "description": "",
   "author": "j10c",
   "license": "MIT",
@@ -19,8 +19,8 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@j10c/eslint-config-basic": "workspace:^0.3.0-beta.2",
-    "@j10c/eslint-config-ts": "workspace:^0.3.0-beta.2",
+    "@j10c/eslint-config-basic": "workspace:^0.3.0",
+    "@j10c/eslint-config-ts": "workspace:^0.3.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "local-pkg": "^0.4.3"
   },
