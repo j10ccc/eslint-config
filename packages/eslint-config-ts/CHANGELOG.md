@@ -1,5 +1,16 @@
 # @j10c/eslint-config-ts
 
+## 0.3.0-beta.2
+
+### Minor Changes
+
+- feat(import): add inline import sort
+
+### Patch Changes
+
+- Updated dependencies
+  - @j10c/eslint-config-basic@0.3.0-beta.2
+
 ## 0.3.0-beta.1
 
 ### Minor Changes
