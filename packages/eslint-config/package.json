@@ -16,14 +16,14 @@
     "lint": "eslint . --config=index.js"
   },
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=9"
   },
   "dependencies": {
-    "@j10c/eslint-config-react": "workspace:^0.4.0",
-    "@j10c/eslint-config-astro": "workspace:^0.4.0",
+    "@j10c/eslint-config-astro": "workspace:*",
+    "@j10c/eslint-config-react": "workspace:*",
     "local-pkg": "^0.5.0"
   },
   "devDependencies": {
-    "eslint": "^8.45.0"
+    "eslint": "^9.13.0"
   }
 }
