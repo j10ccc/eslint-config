@@ -8,9 +8,11 @@
   "description": "The ESLint config used by j10c",
   "main": "./dist/index.js",
   "scripts": {
-    "lint": "eslint --flag unstable_ts_config ."
+    "lint": "eslint --flag unstable_ts_config .",
+    "dev": "config-inspector"
   },
   "devDependencies": {
+    "@eslint/config-inspector": "^0.5.5",
     "@types/eslint__js": "^8.42.3",
     "eslint": "^9.13.0",
     "jiti": "^2.3.3"
