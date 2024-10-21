@@ -1,5 +1,3 @@
-// @ts-check
-
 import { Linter } from "eslint";
 import j10c from "./src";
 

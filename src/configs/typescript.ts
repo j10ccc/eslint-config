@@ -1,8 +1,6 @@
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import { Linter } from "eslint";
-import imports from "./imports";
-import stylistic from "./stylistic";
 
 export default function typescript() {
 
@@ -21,7 +19,11 @@ export default function typescript() {
         parserOptions: {
           ecmaVersion: 2022,
           sourceType: "module",
-          project: "./tsconfig.json"
+          projectService: {
+            allowDefaultProject: ["./*.js"],
+            defaultProject: "./tsconfig.json"
+          },
+          tsconfigRootDir: process.cwd()
         }
       }
     },
