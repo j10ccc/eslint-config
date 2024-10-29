@@ -1,6 +1,6 @@
 # `@j10c/eslint-config`
 
-![NPM Version](https://img.shields.io/npm/v/%40j10c%2Feslint-config?style=social)
+[![NPM Version](https://img.shields.io/npm/v/%40j10c%2Feslint-config?style=social)](https://www.npmjs.com/package/@j10c/eslint-config)
 
 - Double quotes, with semi
 - No trailing space
