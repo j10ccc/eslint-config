@@ -1,5 +1,7 @@
 # `@j10c/eslint-config`
 
+![NPM Version](https://img.shields.io/npm/v/%40j10c%2Feslint-config?style=social)
+
 - Double quotes, with semi
 - No trailing space
 - Auto fix for formatting (aimed to be used standalone without Prettier)
@@ -13,35 +15,22 @@ $ pnpm i -D @j10c/eslint-config
 
 ## Usage
 
-Create an `.eslintrc` file:
+Create an `eslint.config.mjs` file(using flat config):
 
 ```js
-{
-  "extends": ["@j10c"]
-}
+import j10c from "@j10c/eslint-config";
+
+export default j10c();
 ```
 
-Or add the ESLint config to your `package.json`:
+Or use with custom config
+
 
 ```js
-{
-  "name": "my-project",
-  "eslintConfig": {
-    "extends": "@j10c"
+export default [
+  ...j10c(),
+  {
+    // Your custom config
   }
-}
-```
-
-## Configuration Relationship
-
-In this monorepo, those configurations are composed by following the sequence like `eslint-config -> [framework] -> [language]`
-
-```mermaid
-flowchart TD
-  Root[eslint-config] --> React[eslint-config-react]
-  Root --> Astro[eslint-config-astro]
-  Root --> ...config-for-framework
-  React --> TS[eslint-config-ts]
-  React --> Basic[eslint-config-basic]
-  Astro --> ...config-for-language
+]
 ```
