@@ -27,7 +27,8 @@ export default function stylistic() {
         "@stylistic/no-multi-spaces": "error",
         "@stylistic/comma-spacing": "error",
         "@stylistic/switch-colon-spacing": "error",
-        "@stylistic/type-annotation-spacing": "error"
+        "@stylistic/type-annotation-spacing": "error",
+        "@stylistic/eol-last": ["error", "always"]
       }
     }
 
