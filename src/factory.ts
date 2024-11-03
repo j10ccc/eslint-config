@@ -16,7 +16,7 @@ type Switcher = {
   typescript?: boolean;
 };
 
-export function j10c(options?: Switcher) {
+export async function j10c(options?: Switcher) {
   const {
     react: enableReact = isPackageExists("react"),
     astro: enableAstro = isPackageExists("astro"),
@@ -27,8 +27,8 @@ export function j10c(options?: Switcher) {
   } = options ?? {};
   const configs: Linter.Config[][] = [];
 
-  if (enableReact) configs.push(react());
-  if (enableAstro) configs.push(astro());
+  if (enableReact) configs.push(await react());
+  if (enableAstro) configs.push(await astro());
   if (enableJS) configs.push(javascript());
   if (enableJSX) configs.push(jsx());
   if (enableStylistic) configs.push(stylistic());

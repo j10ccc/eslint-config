@@ -1,13 +1,28 @@
-import reactPlugin from "@eslint-react/eslint-plugin";
-// @ts-expect-error Missing type declare
-import reactHooksPlugin from "eslint-plugin-react-hooks";
-// @ts-expect-error Missing type declare
-import reactRefreshPlugin from "eslint-plugin-react-refresh";
 import { Linter } from "eslint";
 import jsx from "./jsx";
+import { ensurePackages, interopDefault } from "../utils";
 
-export default function react() {
+export default async function react() {
   const files = ["**/*.?([cm])js?(x)", "**/*.?([cm])ts?(x)"];
+
+  await ensurePackages([
+    "@eslint-react/eslint-plugin",
+    "eslint-plugin-react-hooks",
+    "eslint-plugin-react-refresh"
+  ]);
+
+  const [
+    reactPlugin,
+    reactHooksPlugin,
+    reactRefreshPlugin
+  ] = await Promise.all([
+    interopDefault(import("@eslint-react/eslint-plugin")),
+    // @ts-expect-error Missing type declare
+    interopDefault(import("eslint-plugin-react-hooks")),
+    // @ts-expect-error Missing type declare
+    interopDefault(import("eslint-plugin-react-refresh"))
+  ]);
+
   const plugins = reactPlugin.configs.recommended.plugins;
 
   return [

@@ -1,9 +1,18 @@
-import astroPlugin from "eslint-plugin-astro";
-import astroParser from "astro-eslint-parser";
 import tsParser from "@typescript-eslint/parser";
 import { Linter } from "eslint";
+import { ensurePackages, interopDefault } from "../utils";
 
-export default function astro() {
+export default async function astro() {
+  await ensurePackages([
+    "eslint-plugin-astro",
+    "astro-eslint-parser"
+  ]);
+
+  const [astroPlugin, astroParser] = await Promise.all([
+    interopDefault(import("eslint-plugin-astro")),
+    interopDefault(import("astro-eslint-parser"))
+  ]);
+
   const files = ["**/*.astro"];
   const recommendedRules = astroPlugin.configs.recommended
     .find(_ => _.name === "astro/recommended")?.rules || {};

@@ -2,7 +2,9 @@ import { Linter } from "eslint";
 import j10c from "./src";
 
 export default [
-  ...j10c(),
+  ...await j10c({
+    react: true
+  }),
   {
     name: "local",
     ignores: [
