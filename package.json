@@ -1,7 +1,7 @@
 {
   "name": "@j10c/eslint-config",
   "type": "module",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "packageManager": "pnpm@9.12.2",
   "license": "MIT",
   "author": "j10c",
