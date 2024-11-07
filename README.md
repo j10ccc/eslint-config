@@ -28,7 +28,7 @@ Or use with custom config
 
 ```js
 export default [
-  ...j10c(),
+  ...await j10c(),
   {
     // Your custom config
   }
