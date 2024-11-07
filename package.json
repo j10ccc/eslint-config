@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "eslint --flag unstable_ts_config .",
     "build": "tsup --format esm --clean --dts",
-    "dev": "config-inspector"
+    "dev": "config-inspector",
+    "publish": "pnpm build && bumpp && pnpm publish"
   },
   "files": [
     "dist"
@@ -69,6 +70,7 @@
     "@stylistic/eslint-plugin": "^2.9.0",
     "@typescript-eslint/eslint-plugin": "^8.10.0",
     "@typescript-eslint/parser": "^8.10.0",
+    "bumpp": "^9.8.1",
     "globals": "^15.11.0",
     "local-pkg": "^0.5.0"
   }
