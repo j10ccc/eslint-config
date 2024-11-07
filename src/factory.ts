@@ -6,6 +6,7 @@ import stylistic from "./configs/stylistic";
 import react from "./configs/react";
 import astro from "./configs/astro";
 import { isPackageExists } from "local-pkg";
+import { unocss } from "./configs/unocss";
 
 type Switcher = {
   astro?: boolean;
@@ -14,12 +15,14 @@ type Switcher = {
   jsx?: boolean;
   stylistic?: boolean;
   typescript?: boolean;
+  unocss?: boolean;
 };
 
 export async function j10c(options?: Switcher) {
   const {
     react: enableReact = isPackageExists("react"),
     astro: enableAstro = isPackageExists("astro"),
+    unocss: enableUnocss = isPackageExists("unocss"),
     javascript: enableJS = true,
     jsx: enableJSX = true,
     stylistic: enableStylistic = true,
@@ -29,6 +32,7 @@ export async function j10c(options?: Switcher) {
 
   if (enableReact) configs.push(await react());
   if (enableAstro) configs.push(await astro());
+  if (enableUnocss) configs.push(await unocss());
   if (enableJS) configs.push(javascript());
   if (enableJSX) configs.push(jsx());
   if (enableStylistic) configs.push(stylistic());
