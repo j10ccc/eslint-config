@@ -11,7 +11,7 @@
     "lint": "eslint --flag unstable_ts_config .",
     "build": "tsup --format esm --clean --dts",
     "dev": "config-inspector",
-    "publish": "pnpm build && bumpp && pnpm publish"
+    "release": "pnpm build && bumpp && pnpm publish"
   },
   "files": [
     "dist"
