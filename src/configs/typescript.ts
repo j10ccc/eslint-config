@@ -37,5 +37,5 @@ export default function typescript() {
         "@typescript-eslint/no-non-null-assertion": "off"
       }
     }
-  ] as Linter.Config[];
+  ] satisfies Linter.Config[];
 }
