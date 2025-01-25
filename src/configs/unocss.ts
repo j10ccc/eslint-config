@@ -1,4 +1,5 @@
 import { Linter } from "eslint";
+
 import { ensurePackages, interopDefault } from "../utils";
 
 export async function unocss() {

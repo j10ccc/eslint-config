@@ -1,5 +1,5 @@
-import { Linter } from "eslint";
 import tsParser from "@typescript-eslint/parser";
+import { Linter } from "eslint";
 
 export default function jsx() {
   const files = ["**/*.?([cm])jsx", "**/*.?([cm])tsx"];

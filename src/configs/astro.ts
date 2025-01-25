@@ -1,5 +1,6 @@
 import tsParser from "@typescript-eslint/parser";
 import { Linter } from "eslint";
+
 import { ensurePackages, interopDefault } from "../utils";
 
 export default async function astro() {

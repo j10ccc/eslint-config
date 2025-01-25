@@ -1,6 +1,7 @@
 import { Linter } from "eslint";
-import jsx from "./jsx";
+
 import { ensurePackages, interopDefault } from "../utils";
+import jsx from "./jsx";
 
 export default async function react() {
   const files = ["**/*.?([cm])js?(x)", "**/*.?([cm])ts?(x)"];

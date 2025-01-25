@@ -1,5 +1,5 @@
-import { Linter } from "eslint";
 import stylisticEslintPlugin from "@stylistic/eslint-plugin";
+import { Linter } from "eslint";
 
 export default function stylistic() {
 
