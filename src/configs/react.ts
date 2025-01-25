@@ -19,7 +19,6 @@ export default async function react() {
     interopDefault(import("@eslint-react/eslint-plugin")),
     // @ts-expect-error Missing type declare
     interopDefault(import("eslint-plugin-react-hooks")),
-    // @ts-expect-error Missing type declare
     interopDefault(import("eslint-plugin-react-refresh"))
   ]);
 
