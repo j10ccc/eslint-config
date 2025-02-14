@@ -9,6 +9,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "build": "tsup --format esm --clean --dts",
     "dev": "config-inspector",
     "release": "pnpm build && bumpp && pnpm publish"
